@@ -47,14 +47,9 @@ h4 {
     text-align: center;
 }
 
-h5 {
-    color: #8E62AC;
-    opacity: 90%;
-}
 
 p {
-    /* margin: 5% !important; */
-    font-size: large;
+    font-size: 20px;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -64,6 +59,7 @@ hr {
     border-top-style: dotted;
     border-width: 3px;
     width: 100%;
+    margin: 20px auto 0;
 }
 
 ul {
@@ -72,12 +68,12 @@ ul {
 }
 
 .navbar {
-    margin-right: 1rem;
     top: 0;
 }
 
 .sticky-top {
-    backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px);  */
+    background-color: #fff;
 }
 
 .navbar-brand img {
@@ -87,17 +83,20 @@ ul {
 
 .nav-link {
     color: black !important;
-    font-weight: 500;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    transition: 300ms !important;
+    padding-right: 18px !important;
 }
 
 .nav-link.active {
-    font-weight: 600;
+    font-weight: 600 !important;
     color: #8E62AC !important;
 }
 
 .nav-link:hover {
     color: #8E62AC !important;
-    font-weight: 600;
+    text-decoration: underline;
 }
 
 .navbar-toggler-icon {
@@ -106,7 +105,7 @@ ul {
 
 /***** Top *****/
 .top {
-    margin: 5% 7%;
+    margin: 5% 7% 4%;
 }
 
 .welcome {
@@ -125,12 +124,7 @@ ul {
     padding: 0 2;
 }
 
-.top-para {
-    font-size: 20px;
-}
-
 .homesnap {
-    width: 400px;
     margin: auto;
 }
 
@@ -141,13 +135,122 @@ ul {
 .btn-light {
     background-color: #8E62AC !important;
     color: white !important;
-    margin-right: 1.2rem;
 }
 
 .btn-light:hover {
     background-color: #af6cdc !important;
-    /* color: #8E62AC !important; */
 }
+
+.para {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/*** tour ***/
+.tour {
+    margin: 2% 4%;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-head {
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Urbanist', sans-serif;
+    margin: 2%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 300ms;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.btn-outline-primary {
+    font-weight: 600 !important;
+    --bs-btn-color: #8E62AC !important;
+    --bs-btn-border-color: #8E62AC !important;
+    --bs-btn-hover-color: #fff !important;
+    --bs-btn-hover-bg: #8E62AC !important;
+    --bs-btn-hover-border-color: #8E62AC !important;
+    --bs-btn-active-bg: #8E62AC !important;
+    --bs-btn-active-border-color: #8E62AC !important;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*** About ***/
+.about {
+    margin: 4% 10%;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.abt-logo {
+    width: 280px;
+    margin-bottom: 30px;
+    transition: 300ms;
+}
+
+.abt-logo:hover {
+    transform: scale(1.1);
+}
+
+.abt-para {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Enquiry */
+#enquiry {
+    padding: 1% 8%;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: #222222;
+    font-size: 20px;
+    text-align: left;
+}
+
+label,
+input,
+textarea {
+    font-size: 20px;
+    padding: 8px;
+}
+
+label {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+}
+
+.form-content {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.submit {
+    padding: 8px !important;
+    text-align: center !important;
+    font-size: 20px !important;
+}
+
 
 /*****Footer*****/
 .footer {
@@ -172,6 +275,11 @@ ul {
 
 #logodown {
     margin: 3% auto;
+    transition: 300ms;
+}
+
+#logodown:hover {
+    transform: scale(1.1);
 }
 
 .footer-link1 {
@@ -190,6 +298,7 @@ ul {
     color: #1f1f1f;
     margin: 5px;
     text-decoration: none;
+    transition: 300ms;
 }
 
 .footer-link:hover {
@@ -198,8 +307,14 @@ ul {
 }
 
 .font3 {
-    font-size: .9rem;
+    font-size: 1rem;
     margin: 3% auto 0px auto;
+}
+
+.font3 a {
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .isoc {

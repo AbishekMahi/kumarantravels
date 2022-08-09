@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media only screen and (max-width: 800px) {
+
+    p,
+    .abt-para,
+    form,
+    label,
+    input,
+    textarea,
+    .form-content,
+    .footer-para,
+    .footer-link1 {
+        font-size: 16px;
+    }
+
+    /***** Top *****/
+    .top {
+        margin: 5% 6% 4%;
+    }
+
+    .welcome {
+        font-size: 1.17em;
+        font-weight: 600;
+    }
+
+    .top-head {
+        font-size: 2.8rem;
+    }
+
+    .para {
+        margin-bottom: 10px;
+    }
+
+    /*** tour ***/
+    .tour {
+        margin: 4% 6%;
+    }
+
+    .sub-head {
+        font-size: 2.3rem;
+    }
+
+    .card-title {
+        font-size: 1.45rem;
+    }
+
+    /*** About ***/
+    .about {
+        margin: 4% 6%;
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .abt-logo {
+        width: 220px;
+        margin-bottom: 20px;
+    }
+
+    /* Enquiry */
+    #enquiry {
+        padding: 1% 6%;
+    }
+
+    .submit {
+        font-size: 16px !important;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    
+    .msg-lottie {
+        width: 70% !important;
+    }
+
+}
