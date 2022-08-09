@@ -171,7 +171,7 @@ ul {
 }
 
 .card-title {
-    font-size: 1.8rem;
+    font-size: 1.45rem;
     text-align: center;
     font-weight: 800;
     font-family: 'Urbanist', sans-serif;
@@ -292,6 +292,7 @@ label {
 .footer-link1:hover {
     color: #8E62AC;
     opacity: 100%;
+    text-decoration: underline;
 }
 
 .footer-link {
