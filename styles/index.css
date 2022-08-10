@@ -41,6 +41,7 @@
         transform: rotate(360deg);
     }
 }
+
 /* Add animation to "page content" */
 .animate-bottom {
     position: relative;
@@ -48,22 +49,39 @@
     -webkit-animation-duration: 1s;
     animation-name: animatebottom;
     animation-duration: 1s
-  }
-  
-  @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
-  }
-  
-  @keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
-  }
-  
-  #main {
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+#main {
     display: none;
+}
+
+.main {
     text-align: center;
-  }
+}
 
 /*******   Scrollbar   *******/
 
@@ -98,7 +116,6 @@ h4 {
     margin: 2%;
     text-align: center;
 }
-
 
 p {
     font-family: 'Nunito', sans-serif;
@@ -174,6 +191,7 @@ ul {
 .top {
     padding: 5% 7% 4%;
     color: rgba(0, 0, 0, 0.826);
+    text-align: start;
 }
 
 .welcome {
