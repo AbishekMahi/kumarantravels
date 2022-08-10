@@ -16,7 +16,7 @@
 
     /***** Top *****/
     .top {
-        padding: 2% 4% 4%;
+        padding: 2% 7% 4%;
     }
 
     .carousel-indicators {
@@ -28,12 +28,15 @@
     }
 
     .carousel-item {
-        height: 265px !important;
+        height: 330px !important;
     }
 
     .welcome {
         font-size: 16px;
         font-weight: 600;
+    }
+    mark{
+        font-size: 1.3rem;
     }
 
     .top-head {
@@ -117,7 +120,7 @@
         font-size: 12px;
     }
     .top-head {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .top-btn {
@@ -130,6 +133,7 @@
 
     .top-para {
         font-size: 12px !important;
+        display: none;
     }
 
     .homesnap {
