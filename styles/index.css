@@ -49,7 +49,6 @@ h4 {
 
 
 p {
-    font-size: 20px;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -110,16 +109,24 @@ ul {
     width: 8% !important;
 }
 
+.carousel-dark .carousel-control-next-icon,
+.carousel-dark .carousel-control-prev-icon {
+    filter: 0;
+    /* background-color: black; */
+}
+
 .carousel-item {
-    height: 85vh !important;
+    height: 530px !important;
 }
 
 .top {
     padding: 5% 7% 4%;
+    color: rgba(0, 0, 0, 0.826);
 }
 
 .welcome {
-    font-weight: 600;
+    font-weight: 400;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .top-head {
@@ -132,14 +139,16 @@ ul {
     padding: 10 !important;
 }
 
-.top-head-span {
-    background-color: #8E62AC;
-    color: #fff;
-    padding: 0 2;
+mark {
+    font-size: 2.4rem;
+    background-color: transparent !important;
+    font-weight: 800;
+    padding: 0 2px !important;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .homesnap {
-    margin: 1.2rem 0;
+    z-index: -9;
     width: 100%;
 }
 

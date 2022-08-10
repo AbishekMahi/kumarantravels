@@ -3,7 +3,6 @@
 
 @media only screen and (max-width: 800px) {
 
-    p,
     .abt-para,
     form,
     label,
@@ -20,26 +19,43 @@
         padding: 2% 4% 4%;
     }
 
-    .carousel-item {
-        height: 100% !important;
+    .carousel-indicators {
+        margin-bottom: 0 !important;
     }
 
-    /* .homesnap {
-        margin: 0 0 1.5rem;
-        width: 120%;
-    } */
+    .carousel-indicators [data-bs-target] {
+        width: 15px !important;
+    }
+
+    .carousel-item {
+        height: 265px !important;
+    }
 
     .welcome {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 600;
     }
 
     .top-head {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
-    .top-btn{
-        padding: 8 !important;
+
+    .top-btn {
+        padding: 8px !important;
+        font-size: 14px !important;
     }
+
+    .homesnap {
+        width: 110%;
+        margin-top: .4rem;
+        margin-left: -5%;
+    }
+
+    .top-para {
+        font-size: 16px !important;
+        display: none;
+    }
+
     .para {
         margin-bottom: 10px;
     }
@@ -81,10 +97,48 @@
 
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
+
+
+    /***** Top *****/
+    .top {
+        padding: 2% 7% 4%;
+    }
+
+    .carousel-item {
+        height: 190px !important;
+    }
+
+    .welcome {
+        font-size: 10px;
+        font-weight: 600;
+    }
+    mark{
+        font-size: 12px;
+    }
+    .top-head {
+        font-size: 1.5rem;
+    }
+
+    .top-btn {
+        padding: 4px !important;
+        font-size: 10px !important;
+    }
+    .fa-phone-alt{
+        font-size: 15px;
+    }
+
+    .top-para {
+        font-size: 12px !important;
+    }
+
+    .homesnap {
+        margin-top: 1rem;
+        margin-left: -26%;
+        width: 140%;
+    }
 
     .msg-lottie {
         width: 70% !important;
     }
-
 }
