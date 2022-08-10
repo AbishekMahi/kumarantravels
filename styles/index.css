@@ -104,8 +104,18 @@ ul {
 }
 
 /***** Top *****/
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 8% !important;
+}
+
+.carousel-item {
+    height: 85vh !important;
+}
+
 .top {
-    margin: 5% 7% 4%;
+    padding: 5% 7% 4%;
 }
 
 .welcome {
@@ -125,7 +135,8 @@ ul {
 }
 
 .homesnap {
-    margin: auto;
+    margin: 1.2rem 0;
+    width: 100%;
 }
 
 .fa-phone-alt {
@@ -148,7 +159,7 @@ ul {
 
 /*** tour ***/
 .tour {
-    margin: 2% 4%;
+    padding: 2% 4%;
     display: flex;
     justify-content: center;
 }

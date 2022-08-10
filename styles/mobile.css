@@ -17,7 +17,16 @@
 
     /***** Top *****/
     .top {
-        margin: 5% 6% 4%;
+        padding: 2% 7% 4%;
+    }
+
+    .carousel-item {
+        height: 100% !important;
+    }
+
+    .homesnap {
+        margin: 0 0 1.5rem;
+        width: 120%;
     }
 
     .welcome {
@@ -71,7 +80,7 @@
 }
 
 @media only screen and (max-width: 425px) {
-    
+
     .msg-lottie {
         width: 70% !important;
     }
