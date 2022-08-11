@@ -358,6 +358,10 @@ label {
 .terms-list {
     text-align: left;
 }
+.terms-img{
+    width: 24%;
+    padding: 4%;
+}
 
 /*****Footer*****/
 .footer {

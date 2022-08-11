@@ -104,6 +104,11 @@
         padding: 4% 6%;
     }
 
+    .terms-img {
+        width: 30%;
+        padding: 15px;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -131,6 +136,10 @@
         font-size: 1.4rem;
     }
 
+    .sub-head {
+        font-size: 2rem;
+    }
+
     .top-btn {
         padding: 4px !important;
         font-size: 10px !important;
@@ -153,6 +162,11 @@
 
     .msg-lottie {
         width: 70% !important;
+    }
+
+    .terms-img {
+        width: 40%;
+        padding: 15px;
     }
 
     #logodown {
