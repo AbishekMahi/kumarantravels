@@ -117,6 +117,11 @@ h4 {
     text-align: center;
 }
 
+h5 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+}
+
 p {
     font-family: 'Nunito', sans-serif;
 }
@@ -345,10 +350,18 @@ label {
     font-size: 20px !important;
 }
 
+/*****trems*****/
+.terms {
+    padding: 2% 7%;
+}
+
+.terms-list {
+    text-align: left;
+}
 
 /*****Footer*****/
 .footer {
-    padding: 2% 8%;
+    padding: 2% 6%;
     color: #fff;
     background-color: #1D2633;
     text-align: start;
@@ -370,8 +383,13 @@ label {
 }
 
 #logodown {
-    margin: 3% auto;
+    margin: 2% auto;
+    padding: .5%;
+    width: 100px;
+    height: 100px;
     transition: 300ms;
+    border-radius: 20%;
+    background-color: #fff;
 }
 
 #logodown:hover {
