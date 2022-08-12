@@ -1,0 +1,67 @@
+.lottie-row {
+  padding: 2% 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lottie-row a {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the tab */
+.tab {
+  padding: 2%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  justify-content: space-evenly;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 14px;
+  transition: 0.3s;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #8E62AC;
+  color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  /* border-top: none; */
+  border-radius: 0 0 5px 5px;
+}
+
+address{
+  text-align: left;
+}
+address a{
+  text-decoration: none;
+}

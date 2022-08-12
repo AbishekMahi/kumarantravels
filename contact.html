@@ -21,6 +21,7 @@
     <!-- css -->
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
@@ -84,7 +85,160 @@
                 </div>
             </nav>
         </div>
+        <!-- Contact -->
+        <section class="terms">
+            <div class="col">
+                <h2 class="sub-head">Contact Us</h2>
+                <div class="row lottie-row">
+                    <a class="col" title="Whatsapp" href="#">
+                        <lottie-player style="height: 60px; width: 60px;"
+                            src="https://assets8.lottiefiles.com/private_files/lf30_qnpfavmd.json"
+                            background="transparent" speed="1" loop autoplay>
+                        </lottie-player>
+                    </a>
+                    <a class="col" title="Email" href="mailto:info@kumarantravels.in">
+                        <lottie-player style="height: 60px; width: 60px;"
+                            src="https://assets7.lottiefiles.com/packages/lf20_gfgnjnyb.json" background="transparent"
+                            speed="1" loop autoplay>
+                        </lottie-player>
+                    </a>
+                    <a class="col" title="phone" href="#">
+                        <lottie-player style="height: 60px; width: 60px;"
+                            src="https://assets8.lottiefiles.com/packages/lf20_veeohwtn.json" background="transparent"
+                            speed="1" loop autoplay>
+                        </lottie-player>
+                    </a>
+                </div>
+                <p class="para">We are here to make your trip memorable. Write a message about your next trip, we will
+                    catch you soon.</p>
 
+                <div class="row row-cols-md-2">
+                    <div class="col">
+                        <form action="" autocomplete="on" method="POST" enctype="text/plain"
+                            onsubmit="location.href='thanks.html';">
+                            <div class="form-content">
+                                <label for="name">Name *</label>
+                                <input name="Your Email " type="text" required placeholder="Enter your name">
+                            </div>
+                            <div class="form-content">
+                                <label for="email">Email *</label>
+                                <input name="Your Email " type="email" required placeholder="Enter your email">
+                            </div>
+                            <div class="form-content">
+                                <label for="mobile">Mobile Number *</label>
+                                <input name="Phone Number " type="tel" required placeholder="Enter mobile number">
+                            </div>
+                            <div class="form-content">
+                                <label for="messege">Messsge *</label>
+                                <textarea name="Message " required rows="4" placeholder="Write your message here..."
+                                    cols="4"></textarea>
+                            </div>
+                            <div class="form-content" style="margin-top: 10px;">
+                                <input class="btn btn-light submit" title="Submit" type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-tab">
+                        <h3>Branch Details</h3>
+                        <div class="tab">
+                            <button class="tablinks" title="Kumaran Travels Madurai Address"
+                                onclick="openCity(event, 'Madurai')" id="defaultOpen">Madurai</button>
+                            <button class="tablinks" title="Kumaran Travels Chennai Address"
+                                onclick="openCity(event, 'Chennai')">Chennai</button>
+                            <button class="tablinks" title="Kumaran Travels Coimbatore Address"
+                                onclick="openCity(event, 'Coimbatore')">Coimbatore</button>
+                        </div>
+                        <div id="Madurai" class="tabcontent">
+                            <h4>Madurai Office</h4>
+                            <address><b>Address:</b> 20, North Chitra Road, Madurai - 625 001 <br> <b>Phone:</b> 0452 -
+                                2621519, 4231519 <br><b>Cell: </b>98423 52105 <br><b>Email: </b><a
+                                    href="mailto:info@kumarantravels.in">info@kumarantravels.in</a>
+                            </address>
+                            <h4>Another Office</h4>
+                            <address><b>Address: </b> 73/2, 1st Floor, White Kannu Theater Road, Near Big
+                                Bazaar, Kalavasal, Madurai - 625 016</address>
+                        </div>
+
+                        <div id="Chennai" class="tabcontent">
+                            <h4>Chennai Office</h4>
+                            <address><b>Address: </b>P.V.T Shopping Complex 22, Renganathan Street, The. Nagar - 600
+                                017<br> <b>Phone:</b> 0452 - 42867203 <br><b>Cell: </b>98423 52105 <br><b>Email: </b><a
+                                    href="mailto:info@kumarantravels.in">info@kumarantravels.in</a> <br><b>For more
+                                    details:</b> M. Saravanan - 94421 80430
+                            </address>
+                        </div>
+
+                        <div id="Coimbatore" class="tabcontent">
+                            <h4>Coimbatore Office</h4>
+                            <address><b>Address:</b><br> <b>Phone:</b><br><b>Cell: </b>94422 80430 <br><b>Email: </b><a
+                                    href="mailto:info@kumarantravels.in">info@kumarantravels.in</a>
+                            </address>
+                        </div>
+                        <!-- <lottie-player style="height: 50px;"
+                            src="https://assets7.lottiefiles.com/packages/lf20_wytnbin0/ContactArrowButton.json"
+                            background="transparent" speed="1" loop autoplay>
+                        </lottie-player> -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- tour plans -->
+        <section class="tour">
+            <div class="col">
+                <h2 class="sub-head">Tour Plans</h2>
+                <p class="para">We are here with various types of Tour Plans that you can get with your family and
+                    friends.
+                </p>
+                <div class="row g-4" style="justify-content: center;">
+                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                        <div class="card text-center" title="Domestic Train Tour">
+                            <a href="domestic-tour.html"><img src="images/train.png" class="card-img-top" loading="lazy"
+                                    title="Kumaran Travels Domestic Train Tour"
+                                    alt="Kumaran Travels Domestic Train Tour"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Domestic Train Tour</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <a href="domestic-tour.html" class="btn btn-outline-primary">Read More</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                        <div class="card text-center " title="Special Tour">
+                            <a href="special-tour.html"><img src="images/humayuns-tomb.png" class="card-img-top"
+                                    loading="lazy" title="Kumaran Travels Special Tour"
+                                    alt="Kumaran Travels Special Tour"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Special Tour</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <a href="special-tour.html" class="btn btn-outline-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                        <div class="card text-center" title="Foreign Tour">
+                            <a href="foreign-tour.html"><img src="images/foreign.jpg" class="card-img-top"
+                                    loading="lazy" title="Kumaran Travels Foreign Tour"
+                                    alt="Kumaran Travels Foreign Tour"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Foreign Tour</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <a href="foreign-tour.html" class="btn btn-outline-primary">Read More</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
         <!-- Footer -->
 
         <footer class="footer">
@@ -157,6 +311,23 @@
             document.getElementById("loader").style.display = "none";
             document.getElementById("main").style.display = "block";
         }
+
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">

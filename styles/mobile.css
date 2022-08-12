@@ -14,6 +14,20 @@
         font-size: 16px;
     }
 
+    .navbar-brand {
+        text-align: left;
+        font-size: 1.4rem !important;
+        font-weight: 700;
+        color: #8E62AC !important;
+        font-family: 'Urbanist', sans-serif;
+    }
+
+    .navbar-brand img {
+        height: 4rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     /***** Top *****/
     .top {
         padding: 2% 7% 4%;
@@ -99,6 +113,20 @@
         font-size: 16px !important;
     }
 
+    /*** down lottie ***/
+    .down-lottie {
+        padding: 1% 4%;
+    }
+
+    .lottie {
+        height: 150px;
+    }
+    .lottie-txt h2 {
+        font-family: 'Urbanist', sans-serif !important;
+        font-weight: 800 !important;
+        font-size: 1.2rem;
+    }
+
     /*****trems*****/
     .terms {
         padding: 4% 6%;
@@ -109,6 +137,14 @@
         padding: 15px;
     }
 
+    .tab button {
+        padding: 8px 12px !important;
+        font-size: 1rem !important;
+    }
+
+    .contact-tab {
+        margin: 4% auto !important;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -175,5 +211,8 @@
         width: 85px;
         height: 85px;
         background-color: #fff;
+    }
+    .lottie-txt h2 {
+        font-size: 1rem;
     }
 }
