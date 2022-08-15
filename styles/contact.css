@@ -12,7 +12,10 @@
   align-items: center;
   justify-content: center;
 }
-
+.contact-tab h3{
+  font-family: 'Urbanist', sans-serif !important;
+  font-weight: 600;
+}
 /* Style the tab */
 .tab {
   padding: 2%;
