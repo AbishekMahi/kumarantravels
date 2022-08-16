@@ -306,19 +306,35 @@ mark {
     align-items: center !important;
 }
 
-.abt-logo {
+.abt-logo,
+.abt-img {
     width: 280px;
     margin-bottom: 30px;
     transition: 300ms;
 }
 
-.abt-logo:hover {
+.abt-img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.abt-logo:hover,
+.abt-img:hover {
     transform: scale(1.1);
 }
 
 .abt-para {
     font-size: 20px;
-    text-align: center;
+    margin: 1rem auto 2rem auto;
+}
+
+.abt-hr {
+    border-color: #8E62AC;
+    border-style: none;
+    border-top-style: solid;
+    border-width: 2px;
+    width: 70%;
+    margin: 20px auto;
 }
 
 /* Enquiry */
