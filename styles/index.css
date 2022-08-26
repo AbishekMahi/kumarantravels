@@ -104,6 +104,7 @@ h5 {
 
 p {
     font-family: 'Nunito', sans-serif;
+    font-size: 20px !important;
 }
 
 hr {
@@ -180,13 +181,22 @@ ul {
 }
 
 .carousel-item {
-    height: 530px !important;
+    height: 550px !important;
 }
 
 .top {
     padding: 5% 7% 4%;
     color: rgba(0, 0, 0, 0.826);
     text-align: start;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-col {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .welcome {
@@ -200,8 +210,14 @@ ul {
     font-family: 'Urbanist', sans-serif;
 }
 
+.top-para {
+    font-size: 1.45rem;
+}
+
 .top-btn {
-    padding: 10 !important;
+    padding: 10px 20px !important;
+    border-radius: 40px !important;
+    width: 200px;
 }
 
 mark {
@@ -253,10 +269,18 @@ mark {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 300ms;
+    height: 100% !important;
 }
 
 .card:hover {
     transform: scale(1.05);
+}
+
+.card-body {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: space-between !important;
 }
 
 .card-title {
@@ -266,7 +290,12 @@ mark {
     font-family: 'Urbanist', sans-serif;
 }
 
+.card-text {
+    font-size: 18px !important;
+}
+
 .btn-outline-primary {
+    width: 160px !important;
     font-weight: 600 !important;
     --bs-btn-color: #8E62AC !important;
     --bs-btn-border-color: #8E62AC !important;
@@ -414,7 +443,7 @@ label {
 }
 
 .footer-para {
-    font-size: 18px;
+    font-size: 18px !important;
 }
 
 #logodown {
@@ -439,7 +468,7 @@ label {
 }
 
 .footer-link1:hover {
-    color: #8E62AC;
+    color: #fff;
     opacity: 100%;
     text-decoration: underline;
 }
@@ -457,12 +486,12 @@ label {
 }
 
 .font3 {
-    font-size: 1rem;
-    margin: 3% auto 0px auto;
+    font-size: 18px !important;
+    margin: 3% auto;
 }
 
 .font3 a {
-    font-size: 1rem;
+    font-size: 18px !important;
     text-decoration: none;
     font-weight: 600;
 }
@@ -474,5 +503,4 @@ label {
 .links-list {
     padding-left: 0px;
     margin: 2% 0;
-    font-size: 20px;
 }

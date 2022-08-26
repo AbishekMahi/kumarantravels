@@ -30,7 +30,7 @@
 
     /***** Top *****/
     .top {
-        padding: 2% 7% 4%;
+        padding: 4% 7% 4%;
     }
 
     .carousel-indicators {
@@ -43,6 +43,18 @@
 
     .carousel-item {
         height: 330px !important;
+    }
+
+    .top-col-1 {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .top-col {
+        justify-content: space-around;
+        align-items: flex-start;
+        max-height: 320px !important;
     }
 
     .welcome {
@@ -59,14 +71,15 @@
     }
 
     .top-btn {
-        padding: 8px !important;
+        width: 126px !important;
+        padding: 8px 10px !important;
         font-size: 14px !important;
     }
 
     .homesnap {
-        width: 110%;
-        margin-top: .4rem;
-        margin-left: -5%;
+        width: 105% !important;
+        margin-top: 3rem !important;
+        margin-left: -10% !important;
     }
 
     .top-para {
@@ -121,6 +134,7 @@
     .lottie {
         height: 150px;
     }
+
     .lottie-txt h2 {
         font-family: 'Urbanist', sans-serif !important;
         font-weight: 800 !important;
@@ -151,9 +165,9 @@
 
 
     /***** Top *****/
-    .top {
+    /* .top {
         padding: 2% 7% 4%;
-    }
+    } */
 
     .carousel-item {
         height: 190px !important;
@@ -177,7 +191,7 @@
     }
 
     .top-btn {
-        padding: 4px !important;
+        padding: 8px 15px !important;
         font-size: 10px !important;
     }
 
@@ -212,6 +226,7 @@
         height: 85px;
         background-color: #fff;
     }
+
     .lottie-txt h2 {
         font-size: 1rem;
     }
