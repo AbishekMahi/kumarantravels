@@ -102,6 +102,14 @@ h5 {
     font-weight: 700;
 }
 
+h6 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600 !important;
+    color: rgb(224, 22, 0) !important;
+    font-size: 18px !important;
+    padding: 5px !important;
+}
+
 p {
     font-family: 'Nunito', sans-serif;
     font-size: 20px !important;
@@ -503,4 +511,5 @@ label {
 .links-list {
     padding-left: 0px;
     margin: 2% 0;
+    list-style: inside;
 }
