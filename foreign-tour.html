@@ -43,7 +43,7 @@
             <nav class="navbar navbar-expand-md ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">
-                        <img id="logo" src="images/logo.png" loading="lazy" title="Kumaran Travels"
+                        <img id="logo" src="images/full-txt-logo.png" loading="lazy" title="Kumaran Travels"
                             alt="Kumaran Travels logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -51,6 +51,10 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- mobile search -->
+                    <a class="btn btn-light small-search" href="search.html"
+                        style="margin-left: 0px; margin-right: 0rem;font-size: 20px ;" title="Search Kumaran Travels"
+                        type="button"><i class="fa fa-search" aria-hidden="true"></i></a>
 
                     <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
                         <ul class="navbar-nav">
@@ -60,25 +64,22 @@
                             <li class="nav-item">
                                 <a class="nav-link" title="About" href="about.html">About</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" title="Packages" href="packages.html">Packages</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link active dropdown-toggle" href="#" title="Click To See Tour Plans"
-                                    id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Tour Plans
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" title="Kumaran Travels Domestic Train Tour"
-                                            href="domestic-tour.html">Domestic Tour</a></li>
-                                    <li><a class="dropdown-item" title="Kumaran Travels Special Tour"
-                                            href="special-tour.html">Special
-                                            Tour</a></li>
-                                    <li><a class="dropdown-item" title="Kumaran Travels Foreign Tour"
-                                            href="foreign-tour.html">Foreign
-                                            Tour</a></li>
-                                </ul>
+                            </li> -->
+                            <li class="dropdown">
+                                <p class="nav-link active">Tour Plans
+                                    <i class="fa fa-caret-down"></i>
+                                </p>
+                                <div class="dropdown-content">
+                                    <a class="dropdown-item" title="Kumaran Travels Domestic Train Tour"
+                                        href="domestic-tour.html">Domestic Tour</a>
+                                    <a class="dropdown-item" title="Kumaran Travels Special Tour"
+                                        href="special-tour.html">Special
+                                        Tour</a>
+                                    <a class="dropdown-item" title="Kumaran Travels Foreign Tour"
+                                        href="foreign-tour.html">Foreign Tour</a>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" title="Terms and Conditions" href="terms.html">T&C</a>
@@ -87,6 +88,11 @@
                         <a class="btn btn-light" href="contact.html"
                             style="margin-left: 10px; margin-right: 1rem;font-size: 20px ;"
                             title="Contact Kumaran Travels" type="button">Contact</a>
+                        <!-- web search -->
+                        <a class="btn  big-search" href="search.html"
+                            style="margin-left: 10px; margin-right: 1rem;font-size: 20px ;"
+                            title="Search Kumaran Travels" type="button"><i class="fa fa-search"
+                                aria-hidden="true"></i></a>
                     </div>
                 </div>
             </nav>
@@ -100,215 +106,457 @@
                     friends.
                 </p>
                 <div class="row g-4" style="justify-content: center;">
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour A-1: Sri Lanka (Exclusive)">
                             <a href="#"><img src="images/Foreign Tour Pictures/Tour A-1 - Sri Lanka.jpg"
                                     class="card-img-top" loading="lazy" title="Tour A-1: Sri Lanka (Exclusive)"
                                     alt="Tour A-1: Sri Lanka (Exclusive)"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour A-1: Sri Lanka (Exclusive) </h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text">Sri Lanka (Exclusive)</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center " title="Tour A-3: Sri Lanka (Exclusive)">
-                            <a href="#"><img src="images/Foreign Tour Pictures/Tour A-3 - Sri Lanka.jpg" class="card-img-top" loading="lazy"
-                                    title="Tour A-3: Sri Lanka (Exclusive)" alt="Tour A-3: Sri Lanka (Exclusive)"></a>
+                            <a href="#"><img src="images/Foreign Tour Pictures/Tour A-3 - Sri Lanka.jpg"
+                                    class="card-img-top" loading="lazy" title="Tour A-3: Sri Lanka (Exclusive)"
+                                    alt="Tour A-3: Sri Lanka (Exclusive)"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour A-3: Sri Lanka (Exclusive) </h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text">Sri Lanka (Exclusive) </p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour A-7: Sri Lanka (Exclusive)">
-                            <a href="#"><img src="images/Foreign Tour Pictures/Tour A-7 - Sri Lanka.jpg" class="card-img-top" loading="lazy"
-                                    title="Tour A-7: Sri Lanka (Exclusive)" alt="Tour A-7: Sri Lanka (Exclusive)"></a>
+                            <a href="#"><img src="images/Foreign Tour Pictures/Tour A-7 - Sri Lanka.jpg"
+                                    class="card-img-top" loading="lazy" title="Tour A-7: Sri Lanka (Exclusive)"
+                                    alt="Tour A-7: Sri Lanka (Exclusive)"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour A-7: Sri Lanka (Exclusive) </h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text">Sri Lanka (Exclusive) </p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center " title="Tour B-2: Dubai - Abu Dhabi">
                             <a href="#"><img src="images/Foreign Tour Pictures/Tour B-2 - Dubai.jpg"
                                     class="card-img-top" loading="lazy" title="Tour B-2: Dubai - Abu Dhabi"
                                     alt="Tour B-2: Dubai - Abu Dhabi"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour B-2: Dubai - Abu Dhabi</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text"> Burj Khalifa - Dove Cruise - Belly Dance - Abu Dhabi - City Tour
                                 </p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour D: Indonesia - Bali">
                             <a href="#"><img src="images/Foreign Tour Pictures/Tour D - Indonesia.jpg"
                                     class="card-img-top" loading="lazy" title="Tour D: Indonesia - Bali"
                                     alt="Tour D: Indonesia - Bali"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour D: Indonesia - Bali</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text">Sunset - Kindamani Volcano - Uluwatu Temple - Tanha Lot</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour D-4: Amazing Thailand">
                             <a href="#"><img src="images/Foreign Tour Pictures/Tour D-4 - Thailand.jpg"
                                     class="card-img-top" loading="lazy" title="Tour D-4: Amazing Thailand"
                                     alt="Tour D-4: Amazing Thailand"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour D-4: Amazing Thailand</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text">Alcazar show - Coral Island - China Town - Ride World - Tiger zoo
                                 </p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour E-1: Singapore - Malaysia">
                             <a href="#"><img src="images/Foreign Tour Pictures/Tour E-1 - Singapore.jpg"
                                     class="card-img-top" loading="lazy" title="Tour E-1: Singapore - Malaysia"
                                     alt="Tour E-1: Singapore - Malaysia"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour E-1: Singapore - Malaysia</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text">Genting - Sentosa Tour - Battu Caves Murugan Temple - KL Tower</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour E-2: Singapore - Malaysia">
                             <a href="#"><img src="images/Foreign Tour Pictures/Tour E-2 - Singapore.jpg"
                                     class="card-img-top" loading="lazy" title="Tour E-2: Singapore - Malaysia"
                                     alt="Tour E-2: Singapore - Malaysia"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour E-2: Singapore - Malaysia</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text">Genting Highland - Universal Studios - Night Safari - Battu Caves
                                     Murugan Temple - KL Tower - Cable Car</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour F: Splendors of London - Europe">
                             <a href="#"><img src="images/Foreign Tour Pictures/Tour F - London.jpg" class="card-img-top"
                                     loading="lazy" title="Tour F: Splendors of London - Europe"
                                     alt="Tour F: Splendors of London - Europe"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour E-4: Singapore - Malaysia - Thailand</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text">
                                     Alcazar Show - Coral Island - Battu Caves Murugan Temple - Night Safari - Cable Car
                                 </p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour F: Splendors of London - Europe">
                             <a href="#"><img src="images/Foreign Tour Pictures/Tour F - London.jpg" class="card-img-top"
                                     loading="lazy" title="Tour F: Splendors of London - Europe"
                                     alt="Tour F: Splendors of London - Europe"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour F: Splendors of London - Europe</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text">London - Switzerland - Paris - rome - Itay - Vatican - Venice -
                                     Amsterdam</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour G: Japan">
                             <a href="#"><img src="images/Foreign Tour Pictures/Tour G - Japan.jpg" class="card-img-top"
                                     loading="lazy" title="Tour G: Japan" alt="Tour G: Japan"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour G: Japan</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text">Tokyo - Hiroshima - Osaka - Kyoto - Nara Mountain - Fuji </p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour H: Myanmar Tour">
                             <a href="#"><img src="images/Foreign Tour Pictures/Tour H - Myanmar.jpg"
                                     class="card-img-top" loading="lazy" title="Tour H: Myanmar Tour"
                                     alt="Tour H: Myanmar Tour"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour H: Myanmar Tour</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text"> Yangon - Bago</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour H: Maldives">
                             <a href="#"><img src="images/Foreign Tour Pictures/Tour H - Maldives.jpg"
                                     class="card-img-top" loading="lazy" title="Tour H: Maldives"
                                     alt="Tour H: Maldives"></a>
                             <div class="card-body">
                                 <h5 class="card-title"> Tour H: Maldives</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text">Maafushi Island - Hulhumale </p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour I: Philippines ">
                             <a href="#"><img src="images/Foreign Tour Pictures/Tour I - Phillipines.jpg"
                                     class="card-img-top" loading="lazy" title="Tour I: Philippines "
                                     alt="Tour I: Philippines "></a>
                             <div class="card-body">
                                 <h5 class="card-title"> Tour I: Philippines </h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text"> Manali - Angel City.</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour K: Culture of Vietnam - Cambodia">
                             <a href="#"><img src="images/Foreign Tour Pictures/Tour K - Vietnam.jpg"
                                     class="card-img-top" loading="lazy" title="Tour K: Culture of Vietnam - Cambodia"
                                     alt="Tour K: Culture of Vietnam - Cambodia"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour K: Culture of Vietnam - Cambodia</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text"> Veitnam - Cambodia</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour M: Coast - Coast USA">
                             <a href="#"><img src="images/Foreign Tour Pictures/Tour M - New York.jpg"
                                     class="card-img-top" loading="lazy" title="Tour M: Coast - Coast USA"
                                     alt="Tour M: Coast - Coast USA"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour M: Coast - Coast USA</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text">
                                     New York - Washington - Niagara Falls - Las Vegas - Los Angeles - San Francisco </p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>

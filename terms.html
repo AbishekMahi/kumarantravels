@@ -44,7 +44,7 @@
             <nav class="navbar navbar-expand-md ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">
-                        <img id="logo" src="images/logo.png" loading="lazy" title="Kumaran Travels"
+                        <img id="logo" src="images/full-txt-logo.png" loading="lazy" title="Kumaran Travels"
                             alt="Kumaran Travels logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -52,6 +52,10 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- mobile search -->
+                    <a class="btn btn-light small-search" href="search.html"
+                        style="margin-left: 0px; margin-right: 0rem;font-size: 20px ;" title="Search Kumaran Travels"
+                        type="button"><i class="fa fa-search" aria-hidden="true"></i></a>
 
                     <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
                         <ul class="navbar-nav">
@@ -61,25 +65,22 @@
                             <li class="nav-item">
                                 <a class="nav-link" title="About" href="about.html">About</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" title="Packages" href="packages.html">Packages</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" title="Click To See Tour Plans"
-                                    id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Tour Plans
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" title="Kumaran Travels Domestic Train Tour"
-                                            href="domestic-tour.html">Domestic Tour</a></li>
-                                    <li><a class="dropdown-item" title="Kumaran Travels Special Tour"
-                                            href="special-tour.html">Special
-                                            Tour</a></li>
-                                    <li><a class="dropdown-item" title="Kumaran Travels Foreign Tour"
-                                            href="foreign-tour.html">Foreign
-                                            Tour</a></li>
-                                </ul>
+                            </li> -->
+                                                        <li class="dropdown">
+                                <p class="nav-link">Tour Plans
+                                    <i class="fa fa-caret-down"></i>
+                                </p>
+                                <div class="dropdown-content">
+                                    <a class="dropdown-item" title="Kumaran Travels Domestic Train Tour"
+                                        href="domestic-tour.html">Domestic Tour</a>
+                                    <a class="dropdown-item" title="Kumaran Travels Special Tour"
+                                        href="special-tour.html">Special
+                                        Tour</a>
+                                    <a class="dropdown-item" title="Kumaran Travels Foreign Tour"
+                                        href="foreign-tour.html">Foreign Tour</a>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" title="Terms and Conditions" href="terms.html">T&C</a>
@@ -87,7 +88,12 @@
                         </ul>
                         <a class="btn btn-light" href="contact.html"
                             style="margin-left: 10px; margin-right: 1rem;font-size: 20px ;"
-                            title="Contact Kumaran Travels" type="button">Contact </a>
+                            title="Contact Kumaran Travels" type="button">Contact</a>
+                        <!-- web search -->
+                        <a class="btn  big-search" href="search.html"
+                            style="margin-left: 10px; margin-right: 1rem;font-size: 20px ;"
+                            title="Search Kumaran Travels" type="button"><i class="fa fa-search"
+                                aria-hidden="true"></i></a>
                     </div>
                 </div>
             </nav>
@@ -153,48 +159,42 @@
                     friends.
                 </p>
                 <div class="row g-4" style="justify-content: center;">
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Domestic Train Tour">
-                            <a href="domestic-tour.html"><img src="images/Special Tour Pictures/" class="card-img-top"
-                                    loading="lazy" title="Kumaran Travels Domestic Train Tour"
+                            <a href="domestic-tour.html"><img src="images/train.png" class="card-img-top" loading="lazy"
+                                    title="Kumaran Travels Domestic Train Tour"
                                     alt="Kumaran Travels Domestic Train Tour"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Domestic Train Tour</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <a href="domestic-tour.html" class="btn btn-outline-primary">Read More</a>
+                                <p class="card-text">Delhi - Kasi - Triveni - Shimla - Kulu - Manali - Amarnath -
+                                    Kashmir - Paldal</p>
+                                <a href="domestic-tour.html" class="btn btn-outline-primary">Know More</a>
                             </div>
-
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center " title="Special Tour">
                             <a href="special-tour.html"><img src="images/special-tour.jpg" class="card-img-top"
                                     loading="lazy" title="Kumaran Travels Special Tour"
                                     alt="Kumaran Travels Special Tour"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Special Tour</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <a href="special-tour.html" class="btn btn-outline-primary">Read More</a>
+                                <p class="card-text">Kochin - Moonar - Suruli - Thekkadi Karnataka Places</p>
+                                <a href="special-tour.html" class="btn btn-outline-primary">Know More</a>
                             </div>
+
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Foreign Tour">
                             <a href="foreign-tour.html"><img src="images/foreign.jpg" class="card-img-top"
                                     loading="lazy" title="Kumaran Travels Foreign Tour"
                                     alt="Kumaran Travels Foreign Tour"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Foreign Tour</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <a href="foreign-tour.html" class="btn btn-outline-primary">Read More</a>
+                                <p class="card-text">Singapore - Malaysia - Sri Lanka - Gandhi Dubai</p>
+                                <a href="foreign-tour.html" class="btn btn-outline-primary">Know More</a>
                             </div>
-
                         </div>
                     </div>
                 </div>

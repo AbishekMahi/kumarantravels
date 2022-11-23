@@ -28,6 +28,30 @@
         padding-right: 0;
     }
 
+    .big-search {
+        display: none !important;
+    }
+
+    .small-search {
+        display: block !important;
+    }
+
+    .search {
+        border-radius: 100px;
+        border: transparent;
+        padding: .8rem 1rem;
+        width: 100%;
+        max-width: 100%;
+        min-width: 60%;
+        margin: 1rem 0;
+        font-size: 20px !important;
+        background-color: #dadada;
+    }
+
+    .search-lottie {
+        height: 50%;
+    }
+
     /***** Top *****/
     .top {
         padding: 4% 7% 4%;
@@ -117,9 +141,18 @@
         margin-bottom: 20px;
     }
 
+    .abt-para {
+        text-align: justify;
+    }
+
     /* Enquiry */
     #enquiry {
         padding: 2% 6% 6%;
+    }
+
+    .submit-btn {
+        display: flex !important;
+        align-items: center;
     }
 
     .submit {
@@ -141,7 +174,7 @@
         font-size: 1.2rem;
     }
 
-    /*****trems*****/
+    /*****terms*****/
     .terms {
         padding: 4% 6%;
     }
@@ -168,6 +201,7 @@
     /* .top {
         padding: 2% 7% 4%;
     } */
+
 
     .carousel-item {
         height: 190px !important;
@@ -229,5 +263,9 @@
 
     .lottie-txt h2 {
         font-size: 1rem;
+    }
+
+    .lottie-row {
+        padding: 2% 8% !important;
     }
 }

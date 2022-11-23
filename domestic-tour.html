@@ -43,7 +43,7 @@
             <nav class="navbar navbar-expand-md ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">
-                        <img id="logo" src="images/logo.png" loading="lazy" title="Kumaran Travels"
+                        <img id="logo" src="images/full-txt-logo.png" loading="lazy" title="Kumaran Travels"
                             alt="Kumaran Travels logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -51,6 +51,10 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- mobile search -->
+                    <a class="btn btn-light small-search" href="search.html"
+                        style="margin-left: 0px; margin-right: 0rem;font-size: 20px ;" title="Search Kumaran Travels"
+                        type="button"><i class="fa fa-search" aria-hidden="true"></i></a>
 
                     <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
                         <ul class="navbar-nav">
@@ -60,25 +64,22 @@
                             <li class="nav-item">
                                 <a class="nav-link" title="About" href="about.html">About</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" title="Packages" href="packages.html">Packages</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link active dropdown-toggle" href="#" title="Click To See Tour Plans"
-                                    id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Tour Plans
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" title="Kumaran Travels Domestic Train Tour"
-                                            href="domestic-tour.html">Domestic Tour</a></li>
-                                    <li><a class="dropdown-item" title="Kumaran Travels Special Tour"
-                                            href="special-tour.html">Special
-                                            Tour</a></li>
-                                    <li><a class="dropdown-item" title="Kumaran Travels Foreign Tour"
-                                            href="foreign-tour.html">Foreign
-                                            Tour</a></li>
-                                </ul>
+                            </li> -->
+                            <li class="dropdown">
+                                <p class="nav-link active">Tour Plans
+                                    <i class="fa fa-caret-down"></i>
+                                </p>
+                                <div class="dropdown-content">
+                                    <a class="dropdown-item" title="Kumaran Travels Domestic Train Tour"
+                                        href="domestic-tour.html">Domestic Tour</a>
+                                    <a class="dropdown-item" title="Kumaran Travels Special Tour"
+                                        href="special-tour.html">Special
+                                        Tour</a>
+                                    <a class="dropdown-item" title="Kumaran Travels Foreign Tour"
+                                        href="foreign-tour.html">Foreign Tour</a>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" title="Terms and Conditions" href="terms.html">T&C</a>
@@ -87,6 +88,11 @@
                         <a class="btn btn-light" href="contact.html"
                             style="margin-left: 10px; margin-right: 1rem;font-size: 20px ;"
                             title="Contact Kumaran Travels" type="button">Contact</a>
+                        <!-- web search -->
+                        <a class="btn  big-search" href="search.html"
+                            style="margin-left: 10px; margin-right: 1rem;font-size: 20px ;"
+                            title="Search Kumaran Travels" type="button"><i class="fa fa-search"
+                                aria-hidden="true"></i></a>
                     </div>
                 </div>
             </nav>
@@ -100,243 +106,524 @@
                     friends.
                 </p>
                 <div class="row g-4" style="justify-content: center;">
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour 1: Kasi - Calcutta - Triveni">
-                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 1 - Kasi.jpg" class="card-img-top" loading="lazy"
-                                    title="Tour 1: Kasi - Calcutta - Triveni"
+                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 1 - Kasi.jpg" class="card-img-top"
+                                    loading="lazy" title="Tour 1: Kasi - Calcutta - Triveni"
                                     alt="Tour 1: Kasi - Calcutta - Triveni"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour 1: Kasi - Calcutta - Triveni</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text">Puri - Konarg - Bhubaneshwar - Gaya - Bodhgaya - Vyasakasi -
                                     Allahabad.</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center " title="Tour 2: Kasi - Delhi - Haridwar - Rishikesh">
-                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 2 - Delhi.jpg" class="card-img-top" loading="lazy"
-                                    title="Tour 2: Kasi - Delhi - Haridwar - Rishikesh"
+                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 2 - Delhi.jpg" class="card-img-top"
+                                    loading="lazy" title="Tour 2: Kasi - Delhi - Haridwar - Rishikesh"
                                     alt="Tour 2: Kasi - Delhi - Haridwar - Rishikesh"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour 2: Kasi - Delhi - Haridwar - Rishikesh</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text">Triveni - Vyasakasi - Agra - Mathura</p>
-                                <a href="special-tour.html" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="special-tour.html" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour 3: Kasi - Gaya - Triveni">
-                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 3 - Gaya.jpg" class="card-img-top" loading="lazy"
-                                    title="Tour 3: Kasi - Gaya - Triveni" alt="Tour 3: Kasi - Gaya - Triveni"></a>
+                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 3 - Gaya.jpg" class="card-img-top"
+                                    loading="lazy" title="Tour 3: Kasi - Gaya - Triveni"
+                                    alt="Tour 3: Kasi - Gaya - Triveni"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour 3: Kasi - Gaya - Triveni</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
+
                                 <p class="card-text">Vyasakasi - Bodhgaya - Allahabad</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour 4: Kasi - Calcutta - Haridwar - Rishikesh">
-                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 4 - Haridwar.jpg" class="card-img-top" loading="lazy"
+                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 4 - Haridwar.jpg"
+                                    class="card-img-top" loading="lazy"
                                     title="Tour 4: Kasi - Calcutta - Haridwar - Rishikesh"
                                     alt="Tour 4: Kasi - Calcutta - Haridwar - Rishikesh"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour 4: Kasi - Calcutta - Haridwar - Rishikesh</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text">Puri - Konark - Bhubaneshwar - Gaya - Bodhgaya - Vyasakasi -
                                     Allahabad - Triveni - Amritsar - Delhi - Agra - Mathura</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center " title="Tour 5: Hydrabad - Aurangabad">
-                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 5 - Hyderabad.jpg" class="card-img-top" loading="lazy"
-                                    title="Tour 5: Hydrabad - Aurangabad" alt="Tour 5: Hydrabad - Aurangabad"></a>
+                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 5 - Hyderabad.jpg"
+                                    class="card-img-top" loading="lazy" title="Tour 5: Hydrabad - Aurangabad"
+                                    alt="Tour 5: Hydrabad - Aurangabad"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour 5: Hydrabad - Aurangabad</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text">Hydrabad - Shirdi - Ajanta - Ellora - Mumbai - Goa - Aurangabad</p>
-                                <a href="special-tour.html" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour 6: Bandaripuram - Shirdi - Sanisignapur">
-                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 6 - Shirdi.jpg" class="card-img-top" loading="lazy"
+                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 6 - Shirdi.jpg"
+                                    class="card-img-top" loading="lazy"
                                     title="Tour 6: Bandaripuram - Shirdi - Sanisignapur"
                                     alt="Tour 6: Bandaripuram - Shirdi - Sanisignapur"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour 6: Bandaripuram - Shirdi - Sanisignapur</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text"> Delhi - Rishikesh - Gaurikund</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour 7: Triveni - Kasi - Nepal - Mukdinath">
-                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 7 - Nepal.jpg" class="card-img-top" loading="lazy"
-                                    title="Tour 7: Triveni - Kasi - Nepal - Mukdinath"
+                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 7 - Nepal.jpg" class="card-img-top"
+                                    loading="lazy" title="Tour 7: Triveni - Kasi - Nepal - Mukdinath"
                                     alt="Tour 7: Triveni - Kasi - Nepal - Mukdinath"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour 7: Triveni - Kasi - Nepal - Mukdinath</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text"> Allahabad - Vyasakasi - Ayodhya - Gorakhpur - Kathmandu - Bogra
                                 </p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center " title="Tour 8 : Delhi - Shimla - Manali">
-                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 8 - Manali.jpg" class="card-img-top" loading="lazy"
-                                    title="Tour 8 : Delhi - Shimla - Manali" alt="Tour 8 : Delhi - Shimla - Manali"></a>
+                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 8 - Manali.jpg"
+                                    class="card-img-top" loading="lazy" title="Tour 8 : Delhi - Shimla - Manali"
+                                    alt="Tour 8 : Delhi - Shimla - Manali"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour 8 : Delhi - Shimla - Manali</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text"> Delhi - Akshardam - Kurukshetra - Chandigarh - Shimla - Kubri -
                                     Manali - Rothangbas - Vasishpath</p>
-                                <a href="special-tour.html" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="special-tour.html" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour 9: Delhi - Shimla - Manali - Jaipur">
-                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 9 - Jaipur.jpg" class="card-img-top" loading="lazy"
-                                    title="Tour 9: Delhi - Shimla - Manali - Jaipur"
+                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 9 - Jaipur.jpg"
+                                    class="card-img-top" loading="lazy" title="Tour 9: Delhi - Shimla - Manali - Jaipur"
                                     alt="Tour 9: Delhi - Shimla - Manali - Jaipur"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour 9: Delhi - Shimla - Manali - Jaipur</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text"> Delhi - Akshardam - Kurukshetra - Chandigarh - Shimla - Kubri -
                                     Manali - Rothangbas - Vasishpath - Agra - Mathura - Jaipur.</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour 10: Calcutta - Darjeeling - Gangtok">
-                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 10 - Darjeeling.jpg" class="card-img-top" loading="lazy"
-                                    title="Tour 10: Calcutta - Darjeeling - Gangtok"
+                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 10 - Darjeeling.jpg"
+                                    class="card-img-top" loading="lazy" title="Tour 10: Calcutta - Darjeeling - Gangtok"
                                     alt="Tour 10: Calcutta - Darjeeling - Gangtok"></a>
                             <div class="card-body">
                                 <h5 class="card-title"> Tour 10: Calcutta - Darjeeling - Gangtok</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text"> Calcutta - Darjeeling - Gangtok</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour 11: Delhi - Kashmir - Gulmarg">
-                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 11 - Kashmir.jpeg" class="card-img-top" loading="lazy"
-                                    title="Tour 11: Delhi - Kashmir - Gulmarg"
+                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 11 - Kashmir.jpeg"
+                                    class="card-img-top" loading="lazy" title="Tour 11: Delhi - Kashmir - Gulmarg"
                                     alt="Tour 11: Delhi - Kashmir - Gulmarg"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour 11: Delhi - Kashmir - Gulmarg</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text">Agra - Mathura - Delhi - Kurkshetra - Jammu - Vaishnavi - Amritsar
                                     - Wagah - Kashmir - Gulmarg</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour 12: All India Kasi Tour">
-                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 12 - Bodhgaya.jpg" class="card-img-top" loading="lazy"
-                                    title="Tour 12: All India Kasi Tour" alt="Tour 12: All India Kasi Tour"></a>
-                            <div class="card-body">
+                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 12 - Bodhgaya.jpg"
+                                    class="card-img-top" loading="lazy" title="Tour 12: All India Kasi Tour"
+                                    alt="Tour 12: All India Kasi Tour"></a>
+                            <div class="card-body">s
                                 <h5 class="card-title">Tour 12: All India Kasi Tour</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text"> Mumbai - Jaipur - Agra - Delhi - Haridwar - Rishikesh - Kasi -
                                     Allahabad - Gaya - Bodhgaya - Calcutta - Puri - Konarg - Bhubaneshwar</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="2" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="2" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour 13: Badrinath - Kedarnath - Haridwar">
-                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 13 - Kedarnath.jpg" class="card-img-top" loading="lazy"
+                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 13 - Kedarnath.jpg"
+                                    class="card-img-top" loading="lazy"
                                     title="Tour 13: Badrinath - Kedarnath - Haridwar"
                                     alt="Tour 13: Badrinath - Kedarnath - Haridwar"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour 13: Badrinath - Kedarnath - Haridwar</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text"> Delhi - Rishikesh - Gaurikund</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour 14: Gangotri - Yamunotri">
-                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 14 - Yamnotri.jpeg" class="card-img-top" loading="lazy"
-                                    title="Tour 14: Gangotri - Yamunotri"
+                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 14 - Yamnotri.jpeg"
+                                    class="card-img-top" loading="lazy" title="Tour 14: Gangotri - Yamunotri"
                                     alt="Tour 14: Gangotri - YamunotriTour 14: Gangotri - Yamunotri"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour 14: Gangotri - Yamunotri</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text"> Delhi - Haridwar - Rishikesh - Badrinath - Kedarnath - Gangotri -
                                     Yamunotri</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour 15: Navajotrilingaam - Shirdi - Nashik">
-                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 15 - Somnath.jpeg" class="card-img-top" loading="lazy"
+                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 15 - Somnath.jpeg"
+                                    class="card-img-top" loading="lazy"
                                     title="Tour 15: Navajotrilingaam - Shirdi - Nashik"
                                     alt="Tour 15: Navajotrilingaam - Shirdi - Nashik"></a>
                             <div class="card-body">
                                 <h5 class="card-title"> Tour 15: Navajotrilingaam - Shirdi - Nashik</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text">Bhimasankar - Triyambagam - Krishnaswar - Naganath - Vaidyanath -
                                     Somnath - Nageshwaram - Ujjain - Omkareshwarar - Thambovanam - Sanisikanapur</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour 16: Amarnath - Kashmir - Bal Dal">
-                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 16 - Amarnath.jpg" class="card-img-top" loading="lazy"
-                                    title="Tour 16: Amarnath - Kashmir - Bal Dal"
+                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 16 - Amarnath.jpg"
+                                    class="card-img-top" loading="lazy" title="Tour 16: Amarnath - Kashmir - Bal Dal"
                                     alt="Tour 16: Amarnath - Kashmir - Bal Dal"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour 16: Amarnath - Kashmir - Bal Dal</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text"> Delhi - Jammu - Vaishanividevi</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour 17: Jaipur - Mount Abu">
-                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 17 - Mount Abu.jpg" class="card-img-top" loading="lazy"
-                                    title="Tour 17: Jaipur - Mount Abu" alt="Tour 17: Jaipur - Mount Abu"></a>
+                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 17 - Mount Abu.jpg"
+                                    class="card-img-top" loading="lazy" title="Tour 17: Jaipur - Mount Abu"
+                                    alt="Tour 17: Jaipur - Mount Abu"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour 17: Jaipur - Mount Abu</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text"> Jaipur - Pushkar - Ajmer - Udaipur - Mount Abu - Jodhpur -
                                     Jaisalmar - Thar Desert - Bikaner - Desnok - (Rat Temple) - Sasthram (Balaji)</p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour 18: Panchduaraka">
-                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 18 - Somnath Dwaraka.jpg" class="card-img-top" loading="lazy"
-                                    title="Tour 18: Panchduaraka" alt="Tour 18: Panchduaraka"></a>
+                            <a href="#"><img src="images/Domestic Tour Pictures/Tour 18 - Somnath Dwaraka.jpg"
+                                    class="card-img-top" loading="lazy" title="Tour 18: Panchduaraka"
+                                    alt="Tour 18: Panchduaraka"></a>
                             <div class="card-body">
                                 <h5 class="card-title">Tour 18: Panchduaraka</h5>
-                                <h6 class="card-subtitle">Only Rs.10,000</h6>
+                                <h6 class="card-subtitle">3 Nights & 4 Days</h6>
                                 <p class="card-text">Ahmedabad - Gomati Dwaraka - Patti Dwaraka - Hari Siddhi Mata -
                                     Moola Dwaraka - Somnath - Veeraval - Kangroli Dwaraka - Sri Nath Dwaraka - Koliak
                                 </p>
-                                <a href="#" class="btn btn-outline-primary">Read More</a>
+                                <div class="row card-lottie-row">
+                                    <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                        src="images/food.json" background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 60px; width: 60px;"
+                                        src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                        background="transparent" speed=".8" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                    <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                        background="transparent" speed="1" loop autoplay>
+                                    </lottie-player>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
                     </div>

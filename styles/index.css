@@ -148,7 +148,7 @@ ul {
 }
 
 .navbar-brand img {
-    height: 4rem;
+    height: 6rem;
     padding-left: 1rem;
     padding-right: 0;
 }
@@ -173,6 +173,81 @@ ul {
 
 .navbar-toggler-icon {
     border-color: rgb(255, 255, 255) !important;
+}
+
+.big-search {
+    display: block !important;
+    background-color: #ebebeb !important;
+    color: #000000 !important;
+    border-radius: 50% !important;
+}
+
+.small-search {
+    display: none !important;
+    border-radius: 50% !important;
+}
+
+.big-search:hover {
+    background-color: #e0e0e0 !important;
+    /* border: transparent !important; */
+}
+
+.search {
+    border-radius: 100px;
+    border: transparent;
+    padding: 1rem 1.5rem;
+    max-width: 80%;
+    min-width: 60%;
+    margin: 1rem 1rem 2rem;
+    font-size: 20px !important;
+    background-color: #dadada;
+}
+
+.search-lottie {
+    height: 20%;
+}
+
+.dropdown {
+    cursor: pointer;
+    font-family: 'Questrial', sans-serif !important;
+    font-weight: 600 !important;
+    transition: 0.5s;
+}
+
+.dropdown p {
+    margin-bottom: 0 !important;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 8px 14px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: all 0.2s;
+}
+
+.dropdown-content a:hover {
+    color: #af6cdc;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: all 0.5s;
 }
 
 /***** Top *****/
@@ -204,7 +279,7 @@ ul {
 .top-col {
     display: flex !important;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
 
 .welcome {
@@ -280,6 +355,15 @@ mark {
     height: 100% !important;
 }
 
+.include {
+    font-size: 2.2rem;
+    padding: 5px;
+    color: #fff;
+    border-radius: 8px;
+    background-color: #8E62AC;
+    margin-right: .5rem;
+}
+
 .card:hover {
     transform: scale(1.05);
 }
@@ -300,6 +384,15 @@ mark {
 
 .card-text {
     font-size: 18px !important;
+    margin: .5rem !important;
+}
+
+.card-lottie-row {
+    padding: 0;
+    margin-top: -.5rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-outline-primary {
@@ -312,7 +405,7 @@ mark {
     --bs-btn-hover-border-color: #8E62AC !important;
     --bs-btn-active-bg: #8E62AC !important;
     --bs-btn-active-border-color: #8E62AC !important;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19); */
 }
 
 /*** About ***/
@@ -368,7 +461,10 @@ form {
     text-align: left;
 }
 
-label,
+label {
+    padding: 8px 8px 8px 0;
+}
+
 input,
 textarea {
     /* font-size: 20px; */
@@ -387,7 +483,15 @@ label {
     margin: 5px;
 }
 
+.submit-btn {
+    display: flex !important;
+    align-items: center;
+}
+
 .submit {
+    margin-top: 1rem;
+    width: 130px;
+    border-radius: 50px !important;
     padding: 8px !important;
     text-align: center !important;
     font-size: 20px !important;
@@ -512,4 +616,8 @@ label {
     padding-left: 0px;
     margin: 2% 0;
     list-style: inside;
+}
+
+.search-box {
+    padding: 1% 7% 2%;
 }
