@@ -268,4 +268,27 @@
     .lottie-row {
         padding: 2% 8% !important;
     }
+
+    /* bannerss */
+    .tours {
+        padding: 0% 4% 2%;
+    }
+
+    .banner {
+        margin-bottom: 3rem;
+        color: #fff !important;
+    }
+
+    .banner div {
+        background-color: #0000009c;
+        padding: 4rem 1rem;
+    }
+
+    .banner div h2 {
+        font-size: 2rem !important;
+    }
+
+    .banner div p {
+        font-size: 1rem !important;
+    }
 }

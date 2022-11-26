@@ -99,14 +99,28 @@
         </div>
 
         <!-- tour plans -->
-        <section class="tour">
+        <section class="tours">
             <div class="col">
-                <h2 class="sub-head">Domestic Train Tour Plans</h2>
-                <p class="para">We are here with various types of Tour Plans that you can get with your family and
-                    friends.
-                </p>
-                <div class="row g-4" style="justify-content: center;">
-                    <div class="col-12 col-md-6 col-lg-3 py-2">
+                <div class="banner"
+                    style="background: url(http://travelteacher.online/img/4356domestic.jpg) no-repeat border-box;background-size: cover;">
+                    <div>
+                        <h2 class="sub-head">Domestic Train Tour Plans</h2>
+                        <p class="para">We are here with various types of Tour Plans that you can get with your family
+                            and friends.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- <input type="search" class="search" placeholder="Search places, packages, tour plans and more..." id="" value="goa" autofocus> -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <div class="row g-4" style="justify-content: center;" id="domesticTour">
+                    <center>
+                        <lottie-player class="search-lottie" src="images/42070-travel-is-fun.json"
+                            background="transparent" speed="1" loop autoplay>
+                        </lottie-player>
+                        <h3>loading...</h3>
+                    </center>
+                    <!-- <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour 1: Kasi - Calcutta - Triveni">
                             <a href="#"><img src="images/Domestic Tour Pictures/Tour 1 - Kasi.jpg" class="card-img-top"
                                     loading="lazy" title="Tour 1: Kasi - Calcutta - Triveni"
@@ -626,7 +640,7 @@
                                 <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -692,7 +706,58 @@
     </div>
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <script>
+        fetch('https://script.googleusercontent.com/macros/echo?user_content_key=UPQ3kchthhzI9U3iovSZiAWE0BoXWF0FvV71NqPIBcbUAUeqM5qZAVuLm5RuhkOWgZiM-BLPGv34EfQCjaKdJ11g3O9-W22Wm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnDOEKVF2wcEnprY_xwIHZWEp3k5mPGO2qfkQT1kS6P9AGQha4tejfkN5Hbcu7DPbar-Fw2rnBzVhiBtQbXchhaZPKkKamR_l4A&lib=MKMQYSLXcbLpWqc6EYbvbdAEAf5IAhdjz', {
+                'method': "GET",
+            })
+            .then(function (response) {
+                // The API call was successful!
+                return response.json();
+            }).then(function (datas) {
+                // This is the JSON from our response
+                console.log(datas);
+                console.log(datas[0].tour_type, );
+                let content = "";
+                datas.filter(values => values.tour_type === 'Domestic Train Tour').map((values) => {
+                    content += `<div class="col-12 col-md-6 col-lg-3 py-2"
+                data-string="${values.tour_title} ${values.places} ${values.tour_type}">
+                <div class="card text-center " title="${values.tour_title}">
+                    <img src="${values.image}" class="card-img-top"
+                            loading="lazy" title="${values.tour_title}"
+                            alt="${values.tour_title}">
+                    <div class="card-body">
+                        <h5 class="card-title">${values.tour_title}</h5>
+                        <h6 class="card-subtitle">${values.days}</h6>
+                        <p class="card-text">${values.places}</p>
+                        <div class="row card-lottie-row">
+                            <lottie-player title="Food" style="height: 80px; width: 80px;"
+                                src="images/food.json" background="transparent" speed="1" loop autoplay>
+                            </lottie-player>
+                            <lottie-player style="height: 60px; width: 60px;"
+                                src="https://assets10.lottiefiles.com/packages/lf20_zeqvblhl.json"
+                                background="transparent" speed=".8" loop autoplay>
+                            </lottie-player>
+                            <lottie-player style="height: 65px; width: 65px;" src="images/car.json"
+                                background="transparent" speed="1" loop autoplay>
+                            </lottie-player>
+                            <lottie-player style="height: 65px; width: 65px;" src="images/sleep.json"
+                                background="transparent" speed="1" loop autoplay>
+                            </lottie-player>
+                        </div>
+                        <a href="#" class="btn btn-outline-primary">Know More</a>
+                    </div>
+                </div>
+            </div>`;
+                });
+                // document.getElementById("results").innerHTML = content;
+                document.getElementById("domesticTour").innerHTML = content;
+
+            }).catch(function (err) {
+                // There was an error
+                // console.warn('Something went wrong.', err);
+            });
+    </script>
     <script>
         var myVar;
 
@@ -705,6 +770,19 @@
             document.getElementById("main").style.display = "block";
         }
     </script>
+    <!-- <script>
+        $(".search").on("keyup", function () {
+            var input = $(this).val().toUpperCase();
+
+            $(".col-12").each(function () {
+                if ($(this).data("string").toUpperCase().indexOf(input) < 0) {
+                    $(this).hide();
+                } else {
+                    $(this).show();
+                }
+            })
+        });
+    </script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>

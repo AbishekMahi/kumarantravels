@@ -10,8 +10,7 @@ fetch('https://script.googleusercontent.com/macros/echo?user_content_key=UPQ3kch
         console.log(datas[0].tour_type,);
         let content = "";
         datas.map((values) => {
-            content += `
-            <div class="col-12 col-md-6 col-lg-3 py-2"
+            content += `<div class="col-12 col-md-6 col-lg-3 py-2"
             data-string="${values.tour_title} ${values.places} ${values.tour_type}">
             <div class="card text-center " title="${values.tour_title}">
                 <img src="${values.image}" class="card-img-top"
@@ -42,7 +41,6 @@ fetch('https://script.googleusercontent.com/macros/echo?user_content_key=UPQ3kch
         </div>`;
         });
         document.getElementById("results").innerHTML = content;
-
     }).catch(function (err) {
         // There was an error
         console.warn('Something went wrong.', err);

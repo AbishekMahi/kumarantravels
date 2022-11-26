@@ -36,6 +36,11 @@
 </head>
 
 <body onload="myFunction()">
+    <noscript style="height: 100%; ">
+        <center style="margin-top: 38vh;padding: 5rem;"> If you're seeing this message, that means
+            <strong>JavaScript has been disabled on your browser</strong>, please
+            <strong>enable JS</strong> to make this app work.</center>
+    </noscript>
     <div id="loader">
         <lottie-player src="images/42070-travel-is-fun.json" background="transparent" speed="1" loop autoplay>
         </lottie-player>
@@ -43,7 +48,7 @@
     <div style="display:none;" id="main" class="animate-bottom main">
         <!-- NavBar -->
         <div class="sticky-top">
-            <nav class="navbar navbar-expand-md ">
+            <nav class="navbar navbar-expand-md">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">
                         <img id="logo" src="images/full-txt-logo.png" loading="lazy" title="Kumaran Travels"
@@ -264,7 +269,7 @@
             <div class="col">
                 <h2 class="sub-head">Enquiry</h2>
                 <p class="para">Things will change If you think in a positive way.</p>
-                <div class="row row-cols-md-2" style="flex-flow: wrap-reverse;">
+                <div class="row row-cols-md-2" style="flex-flow: wrap-reverse; align-items: center;">
                     <div class="col">
                         <form class="gform pure-form pure-form-stacked" autocomplete="on" method="POST"
                             data-email="kiruvin4@gmail.com"
@@ -324,7 +329,7 @@
             </div>
         </section>
 
-        <section class="down-lottie">
+        <!-- <section class="down-lottie">
             <div class="row">
                 <div class="col lottie">
                     <lottie-player src="images/42070-travel-is-fun.json" background="transparent" speed="1" loop
@@ -335,7 +340,7 @@
                     <h2 class="">Happy World Tourism Days!</h2>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Footer -->
 

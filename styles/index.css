@@ -621,3 +621,24 @@ label {
 .search-box {
     padding: 1% 7% 2%;
 }
+
+/* banner */
+.tours {
+    padding: 0% 4% 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    margin-bottom: 3rem;
+    color: #fff !important;
+}
+
+.banner div {
+    background-color: #1d2633ad;
+    padding: 5rem;
+}
+
+.banner div h2 {
+    font-size: 4rem !important;
+}
