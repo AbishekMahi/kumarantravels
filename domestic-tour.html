@@ -38,6 +38,30 @@
         </lottie-player>
     </div>
     <div style="display:none;" id="main" class="animate-bottom main">
+        <a href="http://wa.me/+919442280430" type="button" target="_blank" title="Whatsapp" class="whatsapp"><i
+            class="fab fa-whatsapp" aria-hidden="true"></i></a>
+    <style>
+        .whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #25D366;
+            color: white;
+            cursor: pointer;
+            padding: 10px 17px 8px;
+            border-radius: 50%;
+            font-size: 30px;
+            transition: 300ms;
+        }
+
+        .whatsapp:hover {
+            color: white;
+            bottom: 35px;
+        }
+    </style>
         <!-- NavBar -->
         <div class="sticky-top">
             <nav class="navbar navbar-expand-md ">
@@ -113,14 +137,15 @@
 
                 <!-- <input type="search" class="search" placeholder="Search places, packages, tour plans and more..." id="" value="goa" autofocus> -->
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                <div class="row g-4" style="justify-content: center;" id="domesticTour">
-                    <center>
+                <!-- <div class="row g-4" style="justify-content: center;" id="domesticTour"> -->
+                <div class="row g-4" style="justify-content: center;">
+                    <!-- <center>
                         <lottie-player class="search-lottie" src="images/42070-travel-is-fun.json"
                             background="transparent" speed="1" loop autoplay>
                         </lottie-player>
                         <h3>loading...</h3>
-                    </center>
-                    <!-- <div class="col-12 col-md-6 col-lg-3 py-2">
+                    </center> -->
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center" title="Tour 1: Kasi - Calcutta - Triveni">
                             <a href="#"><img src="images/Domestic Tour Pictures/Tour 1 - Kasi.jpg" class="card-img-top"
                                     loading="lazy" title="Tour 1: Kasi - Calcutta - Triveni"
@@ -145,10 +170,115 @@
                                         background="transparent" speed="1" loop autoplay>
                                     </lottie-player>
                                 </div>
-                                <a href="#" class="btn btn-outline-primary">Know More</a>
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                                    data-bs-target="#contentm">Know More</button>
                             </div>
                         </div>
                     </div>
+                    <!-- modal -->
+                    <div class="modal fade" id="contentm" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl  modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="exampleModalLabel">Tour 1: Kasi - Calcutta - Triveni
+                                    </h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/Domestic Tour Pictures/Tour 1 - Kasi.jpg"
+                                        alt="Tour 1: Kasi - Calcutta - Triveni">
+                                    <h5><i class="fas fa-suitcase-rolling"></i> Overview :</h5>
+                                    <p>5 Nights & 6 Days</p>
+                                    <p>Puri - Konarg - Bhubaneshwar - Gaya - Bodhgaya - Vyasakasi - Allahabad.</p>
+                                    <hr>
+                                    <h5><i class="fas fa-map-marker-alt"></i> About This Place :</h5>
+                                    <p> The Kashi Vishwanath Temple is a famous Hindu temple dedicated to Lord Shiva. It
+                                        is located in Vishwanath Gali of Varanasi, Uttar Pradesh in India. The temple
+                                        stands on the western bank of the holy river Ganga, and is one of the twelve
+                                        Jyotirlingas, the holiest of Shiva temples.
+                                    </p>
+                                    <hr>
+                                    <h5><i class="fas fa-bus-alt"></i> Itinerary :</h5>
+                                    <p>
+                                        <b>Day 1:</b>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, voluptates
+                                        dicta? Totam eligendi autem dolorum modi, nulla nostrum fugiat tenetur
+                                        consequatur quisquam tempora vel nisi nobis, assumenda sequi iste neque?<br>
+                                        <b>Day 2:</b>
+                                        consectetur adipisicing elit. Dolore, voluptates
+                                        dicta? Totam eligendi autem dolorum modi, nulla nostrum fugiat tenetur
+                                        consequatur quisquam tempora vel nisi nobis, assumenda sequi iste neque?<br>
+                                        <b>Day 3:</b>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, voluptates
+                                        dicta? Totam eligendi autem dolorum modi, nulla nostrum fugiat tenetur
+                                        consequatur quisquam tempora vel nisi<br>
+                                    </p> <br>
+                                    <h4 class="modal-title" id="exampleModalLabel"><i class="fas fa-calendar-check"></i>
+                                        Book Now</h4>
+                                    <form class="gform pure-form pure-form-stacked" autocomplete="on" method="POST"
+                                        data-email="kiruvin4@gmail.com"
+                                        action="https://script.google.com/macros/s/AKfycby_L2267Y52JoaYQ55pjoZSGmAY1zVFzrp8qnHCuq_MHWdVQmkh78DP6i7hvJQrb9wYPg/exec">
+                                        <div class="form-elements">
+                                            <input name="Tour Title" id="title" type="text" required=""
+                                                value="Tour 1: Kasi - Calcutta - Triveni" hidden>
+                                            <div class="form-content">
+                                                <label for="name">Name <span style="color: red;">*</span></label>
+                                                <input name="Name" id="namevalue" type="text" required=""
+                                                    placeholder="Enter your name">
+                                            </div>
+                                            <div class="form-content">
+                                                <label for="email">Email <span style="color: red;">*</span></label>
+                                                <input name="Email" type="email" required=""
+                                                    placeholder="Enter your email">
+                                            </div>
+                                            <div class="form-content">
+                                                <label for="mobile">Mobile Number <span
+                                                        style="color: red;">*</span></label>
+                                                <input name="Phone" type="tel" pattern="[7-9]{1}[0-9]{9}" required=""
+                                                    placeholder="Enter mobile number">
+                                            </div>
+                                            <div class="form-content">
+                                                <label for="guestCount">Number of Guest <span
+                                                        style="color: red;">*</span></label>
+                                                <input name="Number of Guest" type="number" required=""
+                                                    placeholder="Number of Guest">
+                                            </div>
+                                            <div class="form-content submit-btn" style="margin-top: 10px;">
+                                                <button onclick="nameText()" class="btn btn-light submit"
+                                                    title="Submit">Book</button>
+                                            </div>
+                                        </div>
+                                        <!-- Thankyou_message -->
+                                        <div class="thankyou_message" style="display:none;">
+                                            <center>
+                                                <div class="thanks" style="padding: 0; width: 15rem;">
+                                                    <lottie-player
+                                                        src="https://assets7.lottiefiles.com/packages/lf20_m3ixidnq.json"
+                                                        background="transparent" speed="1" loop autoplay>
+                                                    </lottie-player>
+                                                </div>
+                                                <h3>Thank You, <span id="nametxt"></span>
+                                                    <script>
+                                                        function nameText() {
+                                                            var x = document.getElementById("namevalue").value;
+                                                            document.getElementById("nametxt").innerHTML = x;
+                                                        }
+                                                    </script>
+                                                    <br> Your tour booked succesfully.
+                                                </h3>
+                                            </center>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col-12 col-md-6 col-lg-3 py-2">
                         <div class="card text-center " title="Tour 2: Kasi - Delhi - Haridwar - Rishikesh">
                             <a href="#"><img src="images/Domestic Tour Pictures/Tour 2 - Delhi.jpg" class="card-img-top"
@@ -640,7 +770,7 @@
                                 <a href="#" class="btn btn-outline-primary">Know More</a>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
 
@@ -689,7 +819,7 @@
                             class="fab isoc fa-2x fa-facebook"></i></a>
                     <a class="footer-link" aria-label="Twitter" target="_blank" href="#"><i
                             class="fab isoc fa-2x fa-twitter"></i></a>
-                    <a class="footer-link" aria-label="Instagram" target="_blank" href="#"><i
+                    <a class="footer-link" aria-label="Instagram" target="_blank" href="https://instagram.com/kumarantravelsindia"><i
                             class="fab isoc fa-2x fa-instagram"></i></a>
                 </div>
 
@@ -757,6 +887,115 @@
                 // There was an error
                 // console.warn('Something went wrong.', err);
             });
+    </script>
+    <script data-cfasync="false" type="text/javascript">
+        (function () {
+            function validEmail(email) {
+                var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+                return re.test(email);
+            }
+
+            function validateHuman(honeypot) {
+                if (honeypot) {
+                    console.log("Robot Detected!");
+                    return true;
+                } else {
+                    console.log("Welcome Human!");
+                }
+            }
+
+            function getFormData(form) {
+                var elements = form.elements;
+
+                var fields = Object.keys(elements).filter(function (k) {
+                    return (elements[k].name !== "honeypot");
+                }).map(function (k) {
+                    if (elements[k].name !== undefined) {
+                        return elements[k].name;
+                    } else if (elements[k].length > 0) {
+                        return elements[k].item(0).name;
+                    }
+                }).filter(function (item, pos, self) {
+                    return self.indexOf(item) == pos && item;
+                });
+
+                var formData = {};
+                fields.forEach(function (name) {
+                    var element = elements[name];
+                    formData[name] = element.value;
+                    if (element.length) {
+                        var data = [];
+                        for (var i = 0; i < element.length; i++) {
+                            var item = element.item(i);
+                            if (item.checked || item.selected) {
+                                data.push(item.value);
+                            }
+                        }
+                        formData[name] = data.join(', ');
+                    }
+                });
+
+                // add form-specific values into the data
+                formData.formDataNameOrder = JSON.stringify(fields);
+                formData.formGoogleSheetName = form.dataset.sheet || "Sheet1"; // default sheet name
+                formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+
+                console.log(formData);
+                return formData;
+            }
+
+            function handleFormSubmit(event) {
+                event.preventDefault();
+                var form = event.target;
+                var data = getFormData(form);
+                if (data.email && !validEmail(data.email)) {
+                    var invalidEmail = form.querySelector(".email-invalid");
+                    if (invalidEmail) {
+                        invalidEmail.style.display = "block";
+                        return false;
+                    }
+                } else {
+                    disableAllButtons(form);
+                    var url = form.action;
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('POST', url);
+                    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                    xhr.onreadystatechange = function () {
+                        console.log(xhr.status, xhr.statusText);
+                        console.log(xhr.responseText);
+                        var formElements = form.querySelector(".form-elements")
+                        if (formElements) {
+                            formElements.style.display = "none"; // hide form
+                        }
+                        var thankYouMessage = form.querySelector(".thankyou_message");
+                        if (thankYouMessage) {
+                            thankYouMessage.style.display = "block";
+                        }
+                        return;
+                    };
+                    var encoded = Object.keys(data).map(function (k) {
+                        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+                    }).join('&');
+                    xhr.send(encoded);
+                }
+            }
+
+            function loaded() {
+                console.log("Booking form submission handler loaded successfully.");
+                var forms = document.querySelectorAll("form.gform");
+                for (var i = 0; i < forms.length; i++) {
+                    forms[i].addEventListener("submit", handleFormSubmit, false);
+                }
+            };
+            document.addEventListener("DOMContentLoaded", loaded, false);
+
+            function disableAllButtons(form) {
+                var buttons = form.querySelectorAll("button");
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].disabled = true;
+                }
+            }
+        })();
     </script>
     <script>
         var myVar;

@@ -4,14 +4,17 @@
 @media only screen and (max-width: 800px) {
 
     .abt-para,
+    .para,
+    .card-text,
     form,
     label,
     input,
     textarea,
     .form-content,
     .footer-para,
+    .font3,
     .footer-link1 {
-        font-size: 16px;
+        font-size: 1rem !important;
     }
 
     .navbar-brand {
@@ -126,6 +129,16 @@
 
     .card-title {
         font-size: 1.2rem;
+    }
+
+    .modal p {
+        font-size: 1rem !important;
+        margin-bottom: .3rem !important;
+        margin-left: .1pc;
+    }
+
+    .modal form {
+        padding: 0 !important;
     }
 
     /*** About ***/
@@ -267,6 +280,20 @@
 
     .lottie-row {
         padding: 2% 8% !important;
+    }
+
+    /* modal */
+    .modal {
+        padding: 1rem !important;
+    }
+
+    .modal img {
+        padding: 3% !important;
+        padding-bottom: 5% !important;
+    }
+
+    .whatwe {
+        justify-content: center;
     }
 
     /* bannerss */

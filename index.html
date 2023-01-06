@@ -28,6 +28,8 @@
     <meta data-n-head="ssr" data-hid="twitter:site" name="twitter:site" content="@kumarantravels">
     <meta data-n-head="ssr" data-hid="twitter:creator" name="twitter:creator" content="@kumarantravels">
     <link rel="canonical" href="https://kumarantravels.in">
+    <link rel="manifest" href="manifest.json" />
+
     <!-- css -->
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/mobile.css">
@@ -41,11 +43,37 @@
             <strong>JavaScript has been disabled on your browser</strong>, please
             <strong>enable JS</strong> to make this app work.</center>
     </noscript>
+
+
     <div id="loader">
         <lottie-player src="images/42070-travel-is-fun.json" background="transparent" speed="1" loop autoplay>
         </lottie-player>
     </div>
     <div style="display:none;" id="main" class="animate-bottom main">
+        <a href="http://wa.me/+919442280430" type="button" target="_blank" title="Whatsapp" class="whatsapp"><i
+                class="fab fa-whatsapp" aria-hidden="true"></i></a>
+        <style>
+            .whatsapp {
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                z-index: 99;
+                border: none;
+                outline: none;
+                background-color: #25D366;
+                color: white;
+                cursor: pointer;
+                padding: 10px 17px 8px;
+                border-radius: 50%;
+                font-size: 30px;
+                transition: 300ms;
+            }
+
+            .whatsapp:hover {
+                color: white;
+                bottom: 35px;
+            }
+        </style>
         <!-- NavBar -->
         <div class="sticky-top">
             <nav class="navbar navbar-expand-md">
@@ -246,8 +274,28 @@
                     </div>
                 </div>
             </div>
-
         </section>
+
+        <!-- counter -->
+        <div class=" c-no container-fluid">
+            <div class="container">
+                <div class="row" id="counter">
+                    <div class="col-sm-12 col-md-3 counter-Txt  margin-bot-35">
+                        <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" alt="projects">
+                        <span class="counter-value" data-count="11424">0</span>Tours Completed
+                    </div>
+                    <div class="col-sm-12 col-md-3 counter-Txt  margin-bot-35">
+                        <img src="https://i.postimg.cc/brSZMcWt/badge.png" alt="since">
+                        <span class="counter-value" data-count="52">0</span>Years Of Experience</div>
+                    <div class="col-sm-12 col-md-3 counter-Txt margin-bot-35">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4149/4149883.png" alt="homes completed">
+                        <span class="counter-value" data-count="182520">0</span>Happy Clients</div>
+                    <div class="col-sm-12 col-md-3 counter-Txt margin-bot-35">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2763/2763373.png" alt="awards">
+                        <span class="counter-value" data-count="150">0</span> Top Destinations</div>
+                </div>
+            </div>
+        </div>
 
         <!-- About -->
         <section class="about">
@@ -260,10 +308,56 @@
                     budget. With the blessings of Tirumuruga Kripanandavariyar, many spiritual tours were conducted.
                     Awards for “Best Service in Tourism” was awarded at the function presided over by Madurai Mr.
                     Adinam.</p>
-                <center><a href="about.html" title="About Kumaran Travels" class="btn btn-light">Read More</a></center>
+                <center><a href="about.html" title="About Kumaran Travels" class="btn btn-light1">Read More</a></center>
             </div>
         </section>
+        <!-- tour plans -->
+        <!-- <section class="tour">
+            <div class="col">
+                <h2 class="sub-head">Tours by Places</h2>
+                <p class="para">Explore our Exclusive Destinations Based Tours</p>
+                <div class="row g-4" style="justify-content: center;">
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
+                        <div class="card text-center" title="Domestic Train Tour">
+                            <a href="domestic-tour.html"><img src="images/train.png" class="card-img-top" loading="lazy"
+                                    title="Kumaran Travels Domestic Train Tour"
+                                    alt="Kumaran Travels Domestic Train Tour"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Domestic Train Tour</h5>
+                                <p class="card-text">Delhi - Kasi - Triveni - Shimla - Kulu - Manali - Amarnath -
+                                    Kashmir - Paldal</p>
+                                <a href="domestic-tour.html" class="btn btn-outline-primary">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
+                        <div class="card text-center " title="Special Tour">
+                            <a href="special-tour.html"><img src="images/special-tour.jpg" class="card-img-top"
+                                    loading="lazy" title="Kumaran Travels Special Tour"
+                                    alt="Kumaran Travels Special Tour"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Special Tour</h5>
+                                <p class="card-text">Kochin - Moonar - Suruli - Thekkadi Karnataka Places</p>
+                                <a href="special-tour.html" class="btn btn-outline-primary">Know More</a>
+                            </div>
 
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 py-2">
+                        <div class="card text-center" title="Foreign Tour">
+                            <a href="foreign-tour.html"><img src="images/foreign.jpg" class="card-img-top"
+                                    loading="lazy" title="Kumaran Travels Foreign Tour"
+                                    alt="Kumaran Travels Foreign Tour"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Foreign Tour</h5>
+                                <p class="card-text">Singapore - Malaysia - Sri Lanka - Gandhi Dubai</p>
+                                <a href="foreign-tour.html" class="btn btn-outline-primary">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
         <!-- Enquiry -->
         <section id="enquiry">
             <div class="col">
@@ -354,7 +448,8 @@
                     <h3 class="footer-title">About</h3>
                     <p class="footer-para">Kumaran travels is a travel company started in 1970 in Madurai. For the past
                         52 years, the company has been working on a mission to provide full service travels and tours on
-                        a low budget.</p>
+                        a low budget.
+                    </p>
                 </div>
 
                 <div class="col-md-3">
@@ -384,16 +479,15 @@
                             class="fab isoc fa-2x fa-facebook"></i></a>
                     <a class="footer-link" aria-label="Twitter" target="_blank" href="#"><i
                             class="fab isoc fa-2x fa-twitter"></i></a>
-                    <a class="footer-link" aria-label="Instagram" target="_blank" href="#"><i
-                            class="fab isoc fa-2x fa-instagram"></i></a>
+                    <a class="footer-link" aria-label="Instagram" target="_blank"
+                        href="https://instagram.com/kumarantravelsindia"><i class="fab isoc fa-2x fa-instagram"></i></a>
                 </div>
 
             </div>
 
             <center>
                 <p class="font3">Powered By <a title="Kiruvin Creations" target="_blank"
-                        href="https://www.kiruvin.com/">Kiruvin
-                        Creations</a>. All Rights Reserved.
+                        href="https://www.kiruvin.com/">Kiruvin Creations</a>. All Rights Reserved.
                 </p>
             </center>
 
@@ -401,6 +495,11 @@
     </div>
 
     <!-- JavaScript Bundle with Popper -->
+    <script>
+        if (typeof navigator.serviceWorker !== 'undefined') {
+            navigator.serviceWorker.register('sw.js')
+        }
+    </script>
     <script src="index.js"></script>
     <script data-cfasync="false" type="text/javascript">
         (function () {
@@ -511,6 +610,7 @@
             }
         })();
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         var myVar;
 
@@ -522,6 +622,37 @@
             document.getElementById("loader").style.display = "none";
             document.getElementById("main").style.display = "block";
         }
+
+        // counter
+        var a = 0;
+        $(window).scroll(function () {
+
+            var oTop = $('#counter').offset().top - window.innerHeight;
+            if (a == 0 && $(window).scrollTop() > oTop) {
+                $('.counter-value').each(function () {
+                    var $this = $(this),
+                        countTo = $this.attr('data-count');
+                    $({
+                        countNum: $this.text()
+                    }).animate({
+                            countNum: countTo
+                        },
+
+                        {
+                            duration: 2000,
+                            easing: 'swing',
+                            step: function () {
+                                $this.text(Math.floor(this.countNum) + "+");
+                            },
+                            complete: function () {
+                                $this.text(this.countNum + "+");
+                                //alert('finished');
+                            }
+                        });
+                });
+                a = 1;
+            }
+        });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
@@ -533,3 +664,31 @@
 </body>
 
 </html>
+
+
+<!-- Include Quill stylesheet -->
+<!-- <link href="https://cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet" /> -->
+
+<!-- Create the toolbar container -->
+<!-- <div id="toolbar">
+    <button class="ql-bold">Bold</button>
+    <button class="ql-italic">Italic</button>
+</div> -->
+
+<!-- Create the editor container -->
+<!-- <div id="editor">
+    <textarea>Hello World!</textarea>
+</div> -->
+
+<!-- Include the Quill library -->
+<!-- <script src="https://cdn.quilljs.com/1.0.0/quill.js"></script> -->
+
+<!-- Initialize Quill editor -->
+<!-- <script>
+    var editor = new Quill('#editor', {
+        modules: {
+            toolbar: '#toolbar'
+        },
+        theme: 'snow',
+    });
+</script> -->

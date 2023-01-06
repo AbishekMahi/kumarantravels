@@ -38,6 +38,30 @@
         </lottie-player>
     </div>
     <div style="display:none;" id="main" class="animate-bottom main">
+        <a href="http://wa.me/+919442280430" type="button" target="_blank" title="Whatsapp" class="whatsapp"><i
+                class="fab fa-whatsapp" aria-hidden="true"></i></a>
+        <style>
+            .whatsapp {
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                z-index: 99;
+                border: none;
+                outline: none;
+                background-color: #25D366;
+                color: white;
+                cursor: pointer;
+                padding: 10px 17px 8px;
+                border-radius: 50%;
+                font-size: 30px;
+                transition: 300ms;
+            }
+
+            .whatsapp:hover {
+                color: white;
+                bottom: 35px;
+            }
+        </style>
         <!-- NavBar -->
         <div class="sticky-top">
             <nav class="navbar navbar-expand-md ">
@@ -63,7 +87,7 @@
                             <!-- <li class="nav-item">
                                 <a class="nav-link" title="Packages" href="packages.html">Packages</a>
                             </li> -->
-                                                        <li class="dropdown">
+                            <li class="dropdown">
                                 <p class="nav-link">Tour Plans
                                     <i class="fa fa-caret-down"></i>
                                 </p>
@@ -94,14 +118,15 @@
             <div class="col">
                 <h2 class="sub-head"><img src="images/search.png" alt="search" height="50" slot="margin-top0"> Search
                 </h2>
-                <input type="search" class="search" placeholder="Search places, packages, tour plans and more..." id="" autofocus>
+                <input type="search" class="search" placeholder="Search places, packages, tour plans and more..." id=""
+                    autofocus>
                 <p class="para">We are here with various types of Tour Plans that you can get with your family and
                     friends.
                 </p>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                 <div class="row g-4" style="justify-content: center;" id="results">
                     <center>
-                        <lottie-player class="search-lottie" 
+                        <lottie-player class="search-lottie"
                             src="https://assets7.lottiefiles.com/packages/lf20_n2m0isqh.json" background="transparent"
                             speed="1" loop autoplay>
                         </lottie-player>
@@ -152,8 +177,8 @@
                             class="fab isoc fa-2x fa-facebook"></i></a>
                     <a class="footer-link" aria-label="Twitter" target="_blank" href="#"><i
                             class="fab isoc fa-2x fa-twitter"></i></a>
-                    <a class="footer-link" aria-label="Instagram" target="_blank" href="#"><i
-                            class="fab isoc fa-2x fa-instagram"></i></a>
+                    <a class="footer-link" aria-label="Instagram" target="_blank"
+                        href="https://instagram.com/kumarantravelsindia"><i class="fab isoc fa-2x fa-instagram"></i></a>
                 </div>
 
             </div>
@@ -169,7 +194,7 @@
     </div>
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="index.js"></script>
+    <script src="search.js"></script>
     <script>
         var myVar;
 
@@ -182,6 +207,116 @@
             document.getElementById("main").style.display = "block";
         }
     </script>
+    <!-- <script data-cfasync="false" type="text/javascript">
+        (function () {
+            function validEmail(email) {
+                var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+                return re.test(email);
+            }
+
+            function validateHuman(honeypot) {
+                if (honeypot) {
+                    console.log("Robot Detected!");
+                    return true;
+                } else {
+                    console.log("Welcome Human!");
+                }
+            }
+
+            function handleFormSubmit(event) {
+                event.preventDefault();
+                var form = event.target;
+                var data = getFormData(form);
+                if (data.email && !validEmail(data.email)) {
+                    var invalidEmail = form.querySelector(".email-invalid");
+                    if (invalidEmail) {
+                        invalidEmail.style.display = "block";
+                        return false;
+                    }
+                } else {
+                    disableAllButtons(form);
+                    var url = form.action;
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('POST', url);
+                    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                    xhr.onreadystatechange = function () {
+                        console.log(xhr.status, xhr.statusText);
+                        console.log(xhr.responseText);
+                        var formElements = form.querySelector(".form-elements")
+                        if (formElements) {
+                            formElements.style.display = "none"; // hide form
+                        }
+                        var thankYouMessage = form.querySelector(".thankyou_message");
+                        if (thankYouMessage) {
+                            thankYouMessage.style.display = "block";
+                        }
+                        return;
+                    };
+                    var encoded = Object.keys(data).map(function (k) {
+                        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+                    }).join('&');
+                    xhr.send(encoded);
+                }
+            }
+
+            function getFormData(form) {
+                var elements = form.elements;
+
+                var fields = Object.keys(elements).filter(function (k) {
+                    return (elements[k].name !== "honeypot");
+                }).map(function (k) {
+                    if (elements[k].name !== undefined) {
+                        return elements[k].name;
+                    } else if (elements[k].length > 0) {
+                        return elements[k].item(0).name;
+                    }
+                }).filter(function (item, pos, self) {
+                    return self.indexOf(item) == pos && item;
+                });
+
+                var formData = {};
+                fields.forEach(function (name) {
+                    var element = elements[name];
+                    formData[name] = element.value;
+                    if (element.length) {
+                        var data = [];
+                        for (var i = 0; i < element.length; i++) {
+                            var item = element.item(i);
+                            if (item.checked || item.selected) {
+                                data.push(item.value);
+                            }
+                        }
+                        formData[name] = data.join(', ');
+                    }
+                });
+
+                // add form-specific values into the data
+                formData.formDataNameOrder = JSON.stringify(fields);
+                formData.formGoogleSheetName = form.dataset.sheet || "Sheet1"; // default sheet name
+                formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+
+                console.log(formData);
+                return formData;
+            }
+
+
+            function loaded() {
+                console.log("Booking form submission handler loaded successfully.");
+                var forms = document.querySelectorAll("form.gform");
+                for (var i = 0; i < forms.length; i++) {
+                    forms[i].addEventListener("submit", handleFormSubmit, false);
+                }
+            };
+            document.addEventListener("DOMContentLoaded", loaded, false);
+
+            function disableAllButtons(form) {
+                var buttons = form.querySelectorAll("button");
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].disabled = true;
+                }
+            }
+        })();
+    </script> -->
     <script>
         $(".search").on("keyup", function () {
             var input = $(this).val().toUpperCase();
